@@ -1,0 +1,213 @@
+/*Import style font from google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Poppins:ital,wght@0,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Josefin+Sans:ital,wght@0,100;0,400;1,400&family=Work+Sans:wght@100&display=swap');
+.bodyhome {
+    font-family: Castoro;
+    font-size: 120%;
+}
+a.list {
+    color: white;
+}
+span {
+    margin-left: -95%;
+    text-align: left;
+}
+nav li {
+    display: inline-block;
+    /*Making a Horizontal Menu*/
+    width: 150px;
+    height: 30px;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+    background-color: black;
+    color: #fff;
+}
+nav li:hover {
+    /*Using pseudoselector over each li*/
+    background-color: #63EAFB;
+}
+nav li>ul {
+    /* > simbol, don't show li's children*/
+    display: none;
+}
+nav li:hover>ul {
+    display: block;
+    position: absolute;
+    /* Absolute to use the first free space positioning*/
+    top: 50px;
+    left: 0px;
+}
+.submenu {
+    text-align: left;
+}
+.caja {
+    width: 90%;
+    position: relative;
+    margin: 5%;
+    display: inline-block;
+}
+.img {
+    width: 100%;
+}
+.titulo {
+    margin: -18% 50% 0% 0%;
+    width: 100%;
+    text-align: center;
+    color: #63EAFB;
+    position: absolute;
+}
+.h1titulo {
+    text-align: center;
+    margin-bottom: 3%;
+}
+div.izquierda {
+    width: 35%;
+    margin: 3% 5% 5% 10%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+div.derecha {
+    width: 35%;
+    text-align: center;
+    float: left;
+    margin: 3% 5% 5% 10%;
+    box-sizing: border-box;
+}
+.img2 {
+    width: 100%;
+    display: block;
+}
+.hrhome {
+    height: 5px;
+    background-color: #63EAFB;
+    width: 50%;
+    margin-bottom: 5%;
+    border: solid #63EAFB 2px;
+}
+div.footer_dcha {
+    float: left;
+    width: 30%;
+    margin-left: 10%;
+}
+div.footer_izda {
+    float: left;
+    width: 20%;
+    margin-left: 50%;
+}
+/*PROPERTIES using CLASSES*/
+
+.bodyproperties {
+    background-color: lightgray;
+    font-family: sans-serif;
+    text-align: center;
+}
+.container {
+    margin-left: 50%;
+    background-color: white;
+    width: 500px;
+    padding: 30px;
+    position: relative;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul.slider {
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff;
+}
+ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: scale-down;
+}
+ul.slider li:first-child {
+    opacity: 1;
+}
+ul.slider li:target {
+    opacity: 1;
+}
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+.tables {
+    position: absolute;
+    margin-left: 10%;
+    width: 35%;
+    background-color: white;
+    margin-top: 8%;
+}
+.thprophead {
+    height: 50px;
+    background-color: #63EAFB;
+}
+.thpropbody {
+    text-align: left;
+    height: 30px;
+}
+.hrproperties {
+    height: 5px;
+    background-color: #63EAFB;
+    width: 50%;
+    margin-bottom: 2%;
+    border: solid #63EAFB 2px;
+}
+.anchorp {
+    color: black;
+    width: 30%;
+    margin-left: -80%;
+}
+/*CONTACT PAGE STYLE*/
+
+.h1contact {
+    text-align: center;
+}
+.mapa {
+    float: left;
+    margin-left: 5%;
+    width: 60%;
+}
+.caja_direccion {
+    float: right;
+    margin-right: 15%;
+    width: 20%;
+}
+/*REGISTER*/
+
+textarea{
+			width: 30%;
+			height: 100px;
+			resize: none;
+			border: 1px solid green; }
