@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+		//Declare funtion for loging()
+
+		function login(){
+			//DOM tree to access
+
+			var	user=document.getElementById("user").value;
+			var	password=document.getElementById("password").value;
+
+			//Not Empty
+			if (user==null || user==""||password==null || password==""){
+	 			alert("Please Fill out user and password");
+
+	 		}
+
+	 		if (user=="nhkalmache"&&password=="testingcode") {
+
+
+	 			alert("Welcome");
+
+
+
+	 		}else
+
+	 		alert("Invalid User or password");
+
+	 }
+
+	</script>
+
+
+</head>
+<body>
+<!-- I leave empty action and try get method to see the diference betweet method post and get-->
+	<form action="#" method="get">
+		<p>
+		<label for="nombre">USER</label>
+		</p>
+		<p>
+			<input type="text" name="nombre" id="user">
+		</p>
+		<p>
+		<label for="pass">PASSWORD</label>
+		</p>
+		<p>
+			<input type="password" name="pass" id="password">
+		</p>
+		<input type="submit" name="" value="Log in" onclick="login();">
+
+
+		<hr style="color:lightgray;">
+
+		<p style="color:gray">usuario: nhkalmache y contraseña: testingcode</p>
+		
+
+
+
+
+
+	</form>
+
+	<a href="home.html">Go back to Home page</a>
+
+</body>
+</html>

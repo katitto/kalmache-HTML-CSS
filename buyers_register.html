@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Register</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/Project_Style.css">
+
+
+</head>
+<body>
+<form action="http://vip.groupehn.com:20003/html/infospost.php" method="post">
+
+	<fieldset>
+		<legend> <strong><h2>BUYER REGISTER </h2></strong></legend>
+		<p><label for="firstname"> FIRST NAME </label></p>
+
+		<p><input class="myclassbuyer" id="firstname" type="text" name="firstname"></p>
+		<p><label for="lastname"> LAST NAME </label></p>
+
+		<p><input class="myclassbuyer" id="lastname" type="text" name="lastname"></p>
+
+		<p><label for="dni"> DNI </label></p>
+
+		<p><input class="myclassbuyer" type="text" name="dni"></p>
+
+		<p>
+			<label for="address"> ADDRESS </label>
+		</p>
+
+		<p>
+			<label for="street">STREET</label>
+
+			<input class="myclassbuyer" type="text" name="street">
+
+			<label for="num">Nº</label>
+
+			<input class="myclassbuyer" type="text" name="num">
+
+			<label for="floor">FLOOR</label>
+
+			<input class="myclassbuyer" type="text" name="floor">
+
+
+			<label for="cp">POST CODE</label>
+
+			<input class="myclassbuyer" type="text" name="cp"> 
+
+		</p>
+
+		<p><label for="tlfn"> MOBILE </label></p>
+
+		<p><input class="myclassbuyer" type="text" name="tfno"></p>
+
+		<p><label for="email"> EMAIL </label></p>
+
+		<p><input  class="myclassowner" type="email" name="email" placeholder="yourmail@yahoo.com"></p>
+
+		<p><label for="password"> PASSWORD </label></p>
+
+		<p><input class="myclassbuyer" type="password" name="password"></p>
+
+		<p><label for="gendre"> GENDRE</label></p>
+
+		<p>
+
+			<input type="radio" name="gendre">Man <br>
+			<input type="radio" name="gendre">Women <br>
+
+
+
+		</p>
+
+
+		<p>DOB</p>
+		<p>
+			<input type="date" name="datename">
+		</p>
+		<p>City</p>
+		<select class="myclassowner" name="country" id="country">
+			<option>Madrid</option>
+			<option>Barcelona</option>
+			<option>Valencia</option>
+			<option>Sevilla</option>
+			<option>Alicante</option>
+			<option>Málaga</option>
+			<option>Murcia</option>
+			<option>Cádiz</option>
+			<option>Vizcaya</option>
+			
+
+		</select>
+
+	<p>Extra Request</p>
+	<p><textarea class="myclassbuyerr" name="request" id="request" cols="66" rows="10"></textarea></p>
+	<p>
+		<input type="submit" name="enviar" value="SUBMIT">
+		</p>
+
+
+	
+
+	</fieldset>
+
+</form>
+	<a href="home.html">Go back to Home page</a>
+</body>
+</html>

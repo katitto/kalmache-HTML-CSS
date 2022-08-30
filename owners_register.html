@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Owner Register</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/Project_Style.css">
+
+
+</head>
+<body>
+<form action="http://vip.groupehn.com:20003/html/infospost.php" method="post">
+
+	<fieldset>
+		<legend> <strong><h2>OWNER REGISTER</h2></strong></legend>
+		<p><label for="nombre"> FIRST NAME </label></p>
+		<!--REQUIREMENT:
+		Create a contact form. (POST method)
+		send action to :  http://vip.groupehn.com:20003/html/infospost.php
+		Red words have to be declared
+
+                    <input class="yourclass" id="lastname" type="text" name="lastname" />
+                    <input class="yourclass" id="firstname" type="text" name="firstname" />
+                    <input class="yourclass" id="mail" type="email" name="email" placeholder="yourmail@yahoo.com" />
+                    <textarea class="yourclass" name="request" id="request" cols="66" rows="10"></textarea>
+                    <select class="yourclass" name="country" id="country">
+
+		 -->
+		<p><input class="myclassowner" id="firstname" type="text" name="firstname"></p>
+		<p><label for="lastname"> LAST NAME </label></p>
+
+		<p><input class="myclassowner" id="lastname" type="text" name="lastname"></p>
+
+		<p><label for="dni"> DNI </label></p>
+
+		<p><input class="myclassowner" type="text" name="dni"></p>
+
+		<p>
+			<label for="address"> ADDRESS </label>
+		</p>
+
+		<p>
+			<label for="street">STREET</label>
+
+			<input class="myclassowner" type="text" name="street">
+
+			<label for="num">Nº</label>
+
+			<input class="myclassowner" type="text" name="num">
+
+			<label for="floor">FLOOR</label>
+
+			<input class="myclassowner" type="text" name="floor">
+
+
+			<label for="cp">POST CODE</label>
+
+			<input class="myclassowner" type="text" name="cp"> 
+
+		</p>
+		<p><label for="tlfn"> MOBILE </label></p>
+
+		<p><input class="myclassowner"  type="text" name="tfno"></p>
+
+		<p><label for="email"> EMAIL </label></p>
+
+		<p><input class="myclassowner" type="email" name="email" placeholder="yourmail@yahoo.com"></p>
+
+		<p><label for="password"> PASSWORD </label></p>
+
+		<p><input class="myclassowner" type="password" name="password"></p>
+
+		<p><label for="gendre"> GENDRE</label></p>
+
+		<p>
+
+			<input class="myclassowner" type="radio" name="gendre">Man<br>
+			<input class="myclassowner" type="radio" name="gendre">Woman <br>
+
+
+
+		</p>
+
+
+		<p>Date of Bird</p>
+		<p>
+			<input type="date" name="datename">
+		</p>
+		<p>CITY</p>
+		<select class="myclassowner" name="country" id="country">
+			<option>Madrid</option>
+			<option>Barcelona</option>
+			<option>Valencia</option>
+			<option>Sevilla</option>
+			<option>Alicante</option>
+			<option>Málaga</option>
+			<option>Murcia</option>
+			<option>Cádiz</option>
+			<option>Vizcaya</option>
+			
+
+		</select>
+
+		<hr>
+		<ul>
+		<li>
+
+			<p><label for="fin">Property Destiny</label></p>
+			<p>
+				<input type="radio" name="fin">Sell
+				<input type="radio" name="fin">Rent
+				<input type="radio" name="fin">Temporary Renting
+				<input type="radio" name="fin">Daily Renting
+
+			</p>
+		</li>
+		<li>
+
+			<p><label for="tipo">Property Type</label></p>
+			<p>
+				<input type="radio" name="tipo">House
+				<input type="radio" name="tipo">Flat
+				<input type="radio" name="tipo">Land
+			
+
+
+			</p>
+		</li>
+		<li>
+			<p><label for="habitaciones">Number of Bedrooms</label></p>
+			<p>
+				<input type="number" name="habitaciones" style="width: 5%"> Rooms
+		</li>
+		<li>
+
+			</p>
+
+			<p><label for="banos">Nimber of Bathrooms</label></p>
+			<p>
+				<input type="number" name="banos" style="width: 5%"> Bathrooms
+			</p>
+		</li>
+		<li>
+
+			
+			<p>
+			<label for="espacios">Home Rooms</label>
+			</p>
+			<p>
+			
+				<input type="checkbox" name="terraza"> Terrace <br>
+				<input type="checkbox" name="sotano"> Basement <br>
+				<input type="checkbox" name="comedor"> Living room <br>
+				<input type="checkbox" name="patio"> Back Yard<br>
+				<input type="checkbox" name="garaje"> Garege <br>
+				<input type="checkbox" name="otro">Otro <br> 
+			</p>	
+		</li>
+
+		<li>
+			<p>
+				<label for="espacios_externos">Common Spaces</label>
+
+			<p>
+			<p>
+				<input type="checkbox" name="gimnasio"> Gym <br>
+				<input type="checkbox" name="local"> Office <br>
+				<input type="checkbox" name="piscina"> Swimming Pool<br>
+				<input type="checkbox" name="ascensor"> Lift <br>
+				<input type="checkbox" name="parque"> Park <br>
+				<input type="checkbox" name="jardin"> Garden
+			</p>
+
+		</li>
+		<p><label>Number of Floors</label></p>
+		<p><input type="number" name="plantas" style="width: 5%">Floor/s</p>
+
+
+		<li>
+			
+
+		</li>
+		<li>
+			<!--REQUIREMENT:
+			<textarea class="yourclass" name="request" id="request" cols="66" rows="10"></textarea>
+			-->
+			<p>Comment of the property</p>
+			<p><textarea class="myclassowner" name="request" id="request" cols="66" rows="10"></textarea></p>
+
+		</li>
+		<li>
+			<p>Upload pictures</p>
+			<input type="file" name="fotossubidas" accept="image/png, .jepg, .jpg, image/gif" multiple>	
+
+		</li>
+		<p>
+		<input type="submit" name="enviar" value="SUBMIT">
+		</p>
+
+
+		</ul>
+
+	</fieldset>
+
+</form>
+<a href="home.html">Go back to Home page</a>
+
+</body>
+</html>
